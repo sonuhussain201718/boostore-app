@@ -2,13 +2,17 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const authRoutes = require('./routes/authRoutes');
-const bookRoutes = require('./routes/bookRoutes'); // Assuming you already have book routes
+const bookRoutes = require('./routes/bookRoutes'); 
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json'); // Import the swagger.json file
 
 // Load environment variables from .env file
 dotenv.config();
 
 const app = express();
-app.use(express.json()); // Parse JSON request bodies
+app.use(express.json()); 
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Use the routes
 app.use('/api/auth', authRoutes);

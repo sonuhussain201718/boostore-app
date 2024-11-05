@@ -1,0 +1,167 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "bookstore",
+    "collectionId": "9b4f4ea7-0740-4880-bf37-d49069d06317",
+    "dateExported": "2024-11-05T19:50:06.805Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6d567d31-744b-4a3a-9273-c2925864d4be",
+            "colId": "9b4f4ea7-0740-4880-bf37-d49069d06317",
+            "containerId": "",
+            "name": "http://localhost:8890/api/books/1",
+            "url": "http://localhost:8890/api/books/2",
+            "method": "DELETE",
+            "sortNum": 10000,
+            "created": "2024-11-05T19:47:30.128Z",
+            "modified": "2024-11-05T19:47:30.128Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJuYW1lIjoic29udSIsImVtYWlsIjoic29udUBnbWFpbC5jb20iLCJpYXQiOjE3MzA4MzE1MDAsImV4cCI6MTczMDgzNTEwMH0.x8htQ7O7TSSS0ZD0wLvDtA_nH6_dt7zptcI3ChhuS9w"
+                }
+            ]
+        },
+        {
+            "_id": "5bf16477-7c40-4eb8-8f80-86918f7ecb32",
+            "colId": "9b4f4ea7-0740-4880-bf37-d49069d06317",
+            "containerId": "",
+            "name": "http://localhost:8890/api/books",
+            "url": "http://localhost:8890/api/books/1",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-11-05T19:48:07.584Z",
+            "modified": "2024-11-05T19:48:07.584Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJuYW1lIjoic29udSIsImVtYWlsIjoic29udUBnbWFpbC5jb20iLCJpYXQiOjE3MzA4MzE1MDAsImV4cCI6MTczMDgzNTEwMH0.x8htQ7O7TSSS0ZD0wLvDtA_nH6_dt7zptcI3ChhuS9w"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"title\": \"The Great Gatsby\",\r\n  \"author\": \"F. Scott Fitzgerald\",\r\n  \"published_date\": \"1925-04-10\",\r\n  \"isbn\": \"9780743273566\",\r\n  \"pages\": 200,\r\n  \"language\": \"English\",\r\n  \"publisher\": \"Scribner\"\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "8a60172a-83f3-4840-964e-ddc98f14b3ec",
+            "colId": "9b4f4ea7-0740-4880-bf37-d49069d06317",
+            "containerId": "",
+            "name": "http://localhost:8890/api/books",
+            "url": "http://localhost:8890/api/books",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-11-05T19:48:18.719Z",
+            "modified": "2024-11-05T19:48:18.719Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoic29udSIsImVtYWlsIjoic29udUBnbWFpbC5jb20iLCJpYXQiOjE3MzA4MzU3MjIsImV4cCI6MTczMDgzOTMyMn0.C_7LA6pYBGFL8LNsbHr3eWWuzBZTnVis0MzF3FtkMXk"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"The Great Gatsby3\",\n  \"author\": \"F. Scott Fitzgerald2\",\n  \"published_date\": \"1925-04-10\",\n  \"isbn\": \"9780743273565\",\n  \"pages\": 180,\n  \"language\": \"English\",\n  \"publisher\": \"Scribner\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "36b80f0b-e402-4b68-8fd1-2c5dde37b923",
+            "colId": "9b4f4ea7-0740-4880-bf37-d49069d06317",
+            "containerId": "",
+            "name": "http://localhost:8890/api/books",
+            "url": "http://localhost:8890/api/books?page=1&limit=10&title=The Great Gatsby2&author=fitzgerald&isbn=9780743273565",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-11-05T19:48:28.596Z",
+            "modified": "2024-11-05T19:48:28.596Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoic29udSIsImVtYWlsIjoic29udUBnbWFpbC5jb20iLCJpYXQiOjE3MzA4MzU3MjIsImV4cCI6MTczMDgzOTMyMn0.C_7LA6pYBGFL8LNsbHr3eWWuzBZTnVis0MzF3FtkMXk"
+                }
+            ],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "10",
+                    "isPath": false
+                },
+                {
+                    "name": "title",
+                    "value": "The Great Gatsby2",
+                    "isPath": false
+                },
+                {
+                    "name": "author",
+                    "value": "fitzgerald",
+                    "isPath": false
+                },
+                {
+                    "name": "isbn",
+                    "value": "9780743273565",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "0dc8a762-97fe-4de4-80dd-30a0c9b4625d",
+            "colId": "9b4f4ea7-0740-4880-bf37-d49069d06317",
+            "containerId": "",
+            "name": "http://localhost:8890/api/auth/login",
+            "url": "http://localhost:8890/api/auth/login",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-11-05T19:48:41.878Z",
+            "modified": "2024-11-05T19:48:41.878Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"email\": \"sonu@gmail.com\",\n  \"password\": \"sonu123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a441806c-7f27-4e49-bd8e-ac3e188deb20",
+            "colId": "9b4f4ea7-0740-4880-bf37-d49069d06317",
+            "containerId": "",
+            "name": "http://localhost:3000/api/auth/register",
+            "url": "http://localhost:8890/api/auth/register",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-11-05T19:48:49.076Z",
+            "modified": "2024-11-05T19:48:49.076Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"username\": \"sonu\",\r\n  \"email\": \"sonu@gmail.com\",\r\n  \"password\": \"sonu123\"\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "9a40d449-5af6-40fd-aba7-ca0df40ea457",
+            "colId": "9b4f4ea7-0740-4880-bf37-d49069d06317",
+            "containerId": "",
+            "name": "http://localhost:8890/api/books/2",
+            "url": "http://localhost:8890/api/books/2",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-11-05T19:49:31.157Z",
+            "modified": "2024-11-05T19:49:31.157Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJuYW1lIjoic29udSIsImVtYWlsIjoic29udUBnbWFpbC5jb20iLCJpYXQiOjE3MzA4MzE1MDAsImV4cCI6MTczMDgzNTEwMH0.x8htQ7O7TSSS0ZD0wLvDtA_nH6_dt7zptcI3ChhuS9w"
+                }
+            ]
+        }
+    ],
+    "ref": "LQITb0rv7EggINRZypaEk6hBnPIQjmFEufRQ8_2SSSI2ZTNmVGXaWLkSfmECcOPAlRA0SZeX8sFdqxpX1nDMAg"
+}
